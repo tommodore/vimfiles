@@ -1,6 +1,6 @@
 set nocompatible
 set background=dark
-colorscheme monokai
+colorscheme base16-ocean
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
