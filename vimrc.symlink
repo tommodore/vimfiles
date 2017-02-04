@@ -1,6 +1,6 @@
 set nocompatible
 set background=dark
-colorscheme base16-ocean
+colorscheme monokai
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -13,6 +13,28 @@ Plugin 'fatih/vim-go'
 Plugin 'honza/dockerfile.vim'
 Plugin 'junegunn/fzf'
 Plugin 'wakatime/vim-wakatime'
+Plugin 'mattn/gist-vim'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'rodjek/vim-puppet'
+
+" Plugins
+" Plugin 'mattn/webapi-vim'
+" Plugin 'godlygeek/tabular'
+" Plugin 'tpope/vim-fugitive'
+" Plugin 'scrooloose/syntastic'
+" Plugin 'airblade/vim-gitgutter'
+" Plugin 'kien/ctrlp.vim'
+" Plugin 'tpope/vim-surround'
+" Plugin 'ervandew/supertab'
+" Plugin 'plasticboy/vim-markdown'
+" Plugin 'SirVer/ultisnips'
+" Plugin 'honza/vim-snippets'
+" Plugin 'tpope/vim-jdaddy'
+" Plugin 'mrtazz/simplenote.vim'
+
+" Colors
+Plugin 'croaky/vim-colors-github'
+Plugin 'sickill/vim-monokai'
 
 set rtp+=~/.fzf
 
@@ -23,7 +45,7 @@ filetype plugin indent on
 " my custom settings
 "
 "
-" highlight 80c
+" highlight 80ci
 set colorcolumn=80
 
 " lead with ,
