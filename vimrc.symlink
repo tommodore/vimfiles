@@ -1,6 +1,6 @@
 set nocompatible
 set background=dark
-colorscheme base16-ocean
+colorscheme monokai
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -16,13 +16,13 @@ Plugin 'wakatime/vim-wakatime'
 Plugin 'mattn/gist-vim'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'rodjek/vim-puppet'
+Plugin 'scrooloose/syntastic'
+Plugin 'airblade/vim-gitgutter'
 
 " Plugins
 " Plugin 'mattn/webapi-vim'
 " Plugin 'godlygeek/tabular'
 " Plugin 'tpope/vim-fugitive'
-" Plugin 'scrooloose/syntastic'
-" Plugin 'airblade/vim-gitgutter'
 " Plugin 'kien/ctrlp.vim'
 " Plugin 'tpope/vim-surround'
 " Plugin 'ervandew/supertab'
@@ -48,6 +48,9 @@ filetype plugin indent on
 " highlight 80ci
 set colorcolumn=80
 
+" Show trailing spaces and highlight hard tabs
+set list listchars=tab:»·,trail:·
+
 " lead with ,
 let mapleader = ","
 
@@ -55,8 +58,10 @@ let mapleader = ","
 :nmap ,e :NERDTreeToggle<CR>
 :nmap ,t :FZF<CR>
 
-" ,s will strip whitespaces
-function! StripWhitespace ()
-  exec ':%s/ \+$//gc'
-endfunction
-map ,s :call StripWhitespace ()<CR>
+" Strip trailing whitespaces on each save
+fun! <SID>StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfun
