@@ -1,6 +1,5 @@
 set nocompatible
 set background=dark
-colorscheme monokai
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -18,21 +17,6 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'rodjek/vim-puppet'
 Plugin 'scrooloose/syntastic'
 Plugin 'airblade/vim-gitgutter'
-
-" Plugins
-" Plugin 'mattn/webapi-vim'
-" Plugin 'godlygeek/tabular'
-" Plugin 'tpope/vim-fugitive'
-" Plugin 'kien/ctrlp.vim'
-" Plugin 'tpope/vim-surround'
-" Plugin 'ervandew/supertab'
-" Plugin 'plasticboy/vim-markdown'
-" Plugin 'SirVer/ultisnips'
-" Plugin 'honza/vim-snippets'
-" Plugin 'tpope/vim-jdaddy'
-" Plugin 'mrtazz/simplenote.vim'
-
-" Colors
 Plugin 'croaky/vim-colors-github'
 Plugin 'sickill/vim-monokai'
 
@@ -43,8 +27,10 @@ filetype plugin indent on
 
 "
 " my custom settings
-"
-"
+
+" colorscheme
+colorscheme monokai
+
 " highlight 80ci
 set colorcolumn=80
 
