@@ -19,6 +19,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'croaky/vim-colors-github'
 Plugin 'sickill/vim-monokai'
+Plugin 'chr4/sslsecure.vim'
 
 set rtp+=~/.fzf
 
