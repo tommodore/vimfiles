@@ -5,7 +5,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'tpope/vim-tbone'
-Plugin 'zerowidth/vim-copy-as-rtf'
 Plugin 'vim-scripts/beauty256'
 Plugin 'michaeljsmith/vim-indent-object'
 Plugin 'tpope/vim-endwise'
@@ -27,7 +26,6 @@ Plugin 'ap/vim-css-color'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-scripts/vimclojure'
 Plugin 'kchmck/vim-coffee-script'
-Plugin 'junegunn/seoul256'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'junegunn/vim-github-dashboard'
@@ -36,7 +34,6 @@ Plugin 'tpope/vim-rails'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp'
 Plugin 'honza/dockerfile.vim'
-
 Plugin 'tpope/vim-sensible'
 Plugin 'rstacruz/vim-opinion'
 Plugin 'vim-scripts/closetag.vim'
